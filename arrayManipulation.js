@@ -13,3 +13,18 @@ console.log(processedNumbers);
 module.exports = {processArray};
 
 
+//task 2
+
+function formatArrayStrings(strings,numbers) {
+    return strings.map((str,index) => {
+        const num = numbers[index];
+        return num % 2 === 0 ? str.toUpperCase() : str.LowerCase()
+    });
+}
+
+//example 
+const strings = [dog,lion,shark,kangoroo,cat]
+const formattedStrings = formatArrayStrings(strings,processedNumbers);
+console.log(formattedStrings);
+//output: [dog,LION,shark,KANGAROO,cat]
+module.exports = {processArray,formatArrayStrings};
